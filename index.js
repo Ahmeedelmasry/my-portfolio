@@ -36,3 +36,15 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+//Form
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwozXcZMhr0HMoroF6jK5zqFQ_q5DKTEUaKZ9LCm3ydj68lf87kga2EBM8Zkl_712DR/exec'
+const form = document.forms['google-sheet']
+
+//form
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response =>document.querySelector(".contact .popup").style.display = "block")
+    .catch(error => alert("error"))
+})
