@@ -287,16 +287,24 @@
       </div>
     </section>
     <section id="contact" class="contact sec-pad dynamicBg">
+          
+         <div class="popup first-popup contact-popup">
+        <div class="inner">
+            <h2 class="text-center">Thank you</h2>
+            <p>Your message was sent successfuly , you will recieve a reply within 24 hrs.</p>
+            <button class="close">Close</button>
+        </div>
+    </div>
+      
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main heading-sec__main--lt">Contact</span>
           <span class="heading-sec__sub heading-sec__sub--lt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
+              You can send me a message if you need any work , and i will reply it ASAP
           </span>
         </h2>
         <div class="contact__form-container">
-          <form action="#" class="contact__form">
+          <form name="google-sheet" action="" method="POST" autocomplete="off" class="contact__form">
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input
@@ -304,7 +312,7 @@
                 placeholder="Enter Your Name"
                 type="text"
                 class="contact__form-input"
-                name="name"
+                name="Name"
                 id="name"
               />
             </div>
@@ -315,7 +323,7 @@
                 placeholder="Enter Your Email"
                 type="text"
                 class="contact__form-input"
-                name="email"
+                name="Email"
                 id="email"
               />
             </div>
@@ -327,7 +335,7 @@
                 rows="10"
                 class="contact__form-input"
                 placeholder="Enter Your Message"
-                name="message"
+                name="Message"
                 id="message"
               ></textarea>
             </div>
