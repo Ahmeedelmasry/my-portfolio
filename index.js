@@ -52,7 +52,7 @@ $(".popup .close").click(function(e) {
 });
 
 //Form
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwozXcZMhr0HMoroF6jK5zqFQ_q5DKTEUaKZ9LCm3ydj68lf87kga2EBM8Zkl_712DR/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyvIoswx_NujZEM8fRENvuCqhEWbkUbibcq58JrJ2OEcU4tb2PNsDTFWRI-1ftsRo5A/exec'
 const form = document.forms['google-sheet']
 
 //form
