@@ -37,6 +37,20 @@ headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
 
+  //Contact Popup
+  $(".popup").click(function() {
+    $(this).fadeOut()
+});
+//Here we stop propagation , means that popup hide only when we click on it itself (only parent click) , prevent the click action on inner div
+$(".popup .inner").click(function(e) {
+    e.stopPropagation();
+});
+//Close popup on button click
+$(".popup .close").click(function(e) {
+    e.preventDefault();
+    $(this).parentsUntil(".popup").parent().fadeOut();
+});
+
 //Form
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwozXcZMhr0HMoroF6jK5zqFQ_q5DKTEUaKZ9LCm3ydj68lf87kga2EBM8Zkl_712DR/exec'
 const form = document.forms['google-sheet']
