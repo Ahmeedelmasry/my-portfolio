@@ -381,18 +381,46 @@ textarea {
 .projects__row-img-cont {
   overflow: hidden;
   width: 85%;
+  height: 400px;
   box-shadow: 0px 0px 10px 3px black;
   border-radius: 15px;
+  position: relative;
+  transition: 5s;
+  background-size: cover;
+  background-position: top left;
+}
+.first-bg {
+  background-image: url(../assets/png/summer.png);
+}
+.second-bg {
+  background-image: url(../assets/png/ellamart.png);
+}
+.third-bg {
+  background-image: url(../assets/png/blog.png);
+}
+.fourth-bg {
+  background-image: url(../assets/png/moda.png);
+}
+.fifth-bg {
+  background-image: url(../assets/png/ella.png);
+}
+.sixth-bg {
+  background-image: url(../assets/png/old-mag.png);
+}
+.seventh-bg {
+  background-image: url(../assets/png/new-mag.png);
+}
+.eighth-bg {
+  background-image: url(../assets/png/elctro.png);
+}
+
+.projects__row-img-cont:hover {
+  background-position: bottom left;
 }
 @media (max-width: 900px) {
   .projects__row-img-cont {
     margin: auto;
   }
-}
-.projects__row-img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
 }
 .projects__row-content {
   padding: 2rem 0;
