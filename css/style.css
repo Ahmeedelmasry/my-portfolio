@@ -389,6 +389,12 @@ textarea {
   background-size: cover;
   background-position: top left;
 }
+.zero-bg {
+  background-image: url(../assets/png/my-folio.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 .first-bg {
   background-image: url(../assets/png/summer.png);
 }
