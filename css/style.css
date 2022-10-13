@@ -387,13 +387,11 @@ textarea {
   position: relative;
   transition: 5s;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: top left;
 }
 .zero-bg {
   background-image: url(../assets/png/my-folio.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 .first-bg {
   background-image: url(../assets/png/summer.png);
@@ -511,7 +509,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-akugn: center;
+  text-align: center;
 }
 .popup h2 {
   font-size: 25px;
